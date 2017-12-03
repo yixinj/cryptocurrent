@@ -1,0 +1,42 @@
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.random {
+  height: 25em;
+}
+
+.thicc {
+  border-radius: 5px;
+}
+
+.style_prevu_kit
+{
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 100ms ease-in;
+    transform: scale(1);
+    background-color: #8da899;
+    color: white;
+    font-family: ubuntu;
+}
+
+.style_prevu_kit:hover
+{
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 100ms ease-in;
+    transform: scale(1.05);
+    background-color: #8da899;
+    color: white;
+    font-family: ubuntu;
+}

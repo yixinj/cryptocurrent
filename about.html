@@ -16,9 +16,8 @@
 
 
     <div class="container">
-      <!-- First row with the coin logo and market price -->
       <div class="row">
-          <!-- COIN TYPE AND LOGO -->
+          <!-- OUR LOGO -->
             <div class="col-sm">
               <div data-tilt class="media">
                 <img class="m-auto random" src="logo.png" alt="logo.png">
@@ -30,43 +29,50 @@
       <div>
         <div class="row">
             <!-- COIN TYPE AND LOGO -->
-            <div class="col-sm border-2 border-dark rounded m-3 p-3 pt-4 style_prevu_kit">
-              <h1 class="text-center">bitcoin</h1>
+            <div class="col-sm border-2 border-dark rounded m-3 p-3 style_prevu_kit vertical-center row-item">
+              <img class="coin-logo" src="img/btc.png">
             </div>
             <!-- MARKET PRICE -->
-            <div class="col-sm border-2 border-dark rounded m-3 style_prevu_kit">
-              <div class="container p-3 text-center">
+            <div class="col-sm border-2 border-dark rounded m-3 style_prevu_kit row-item">
+              <!-- <div class="container p-3 text-center">
                 <h5>market price</h5>
-                <h3><strong>300</strong> USD</h3>
+                <h3><strong><span class="money">11225.60</span></strong> USD</h3>
+              </div> -->
+              <div class="text-center">
+                <script class="ticker" type="text/javascript" src="btc.js">
+                </script>
+                <script type="text/javascript" src="https://www.cryptonator.com/ui/js/widget/single_widget.js"></script>
               </div>
             </div>
         </div>
         <div class="row">
-            <!-- CURRENCY CHANGER -->
-            <div class="col-sm border-2 border-dark rounded m-3 pt-4 pb-3 style_prevu_kit">
-              <div class="dropdown text-center pt-">
-                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  USD
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">USD</button>
-                  <button class="dropdown-item" type="button">CAD</button>
-                </div>
-              </div>
 
+          <div class="col-sm border-2 border-dark rounded m-3 pt-4 pb-5 style_prevu_kit row-item">
+            <!-- COIN CHANGER -->
+            <div class="dropdown text-center">
+              <button class="btn btn-secondary btn-lg dropdown-toggle cointype" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                BTC
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button" onclick="BTC()">BTC</button>
+                <button class="dropdown-item" type="button" onclick="ETH()">ETH</button>
+                <button class="dropdown-item" type="button" onclick="BCH()">BCH</button>
+                <button class="dropdown-item" type="button" onclick="XRP()">XRP</button>
+                <button class="dropdown-item" type="button" onclick="DASH()">DASH</button>
+              </div>
             </div>
+          </div>
             <!-- PREDICTION -->
-            <div class="col-sm border-2 border-dark rounded m-3 style_prevu_kit">
+            <div class="col-sm border-2 border-dark rounded m-3 style_prevu_kit row-item">
               <div class="container p-3 text-center">
                 <h5><strong>prediction</strong></h5>
-                <h3><strong>300</strong> USD</h3>
+                <h3><strong><span class="prediction">0.00</span></strong> USD</h3>
               </div>
             </div>
           </div>
         </div>
       </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="about.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

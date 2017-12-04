@@ -40,3 +40,25 @@
     color: white;
     font-family: ubuntu;
 }
+
+.coin-logo {
+  height: 2em;
+  display: block;
+  margin: 0 auto;
+}
+
+.row-item {
+  height: 100px;
+}
+
+.cointype {
+
+}
+
+.money {
+
+}
+
+.ticker {
+  
+}
